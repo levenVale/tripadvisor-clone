@@ -1,0 +1,372 @@
+/* COMMONS */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000a12;
+  background-color: rgb(240, 240, 240);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+p {
+  line-height: 20px;
+  color: #4a4a4a;
+}
+h1 {
+  font-size: 24px;
+  line-height: 50px;
+  color: black;
+  background-color: #ffffff;
+  border-radius: 25px;
+  text-align: center;
+  padding: 0 10px 0 20px;
+}
+h1:hover {
+  cursor: pointer;
+  color: #333333;
+}
+h1 i {
+  color: #00a680;
+  vertical-align: middle;
+}
+h1:hover i {
+  color: #01c094;
+}
+h2 {
+  font-size: 20px;
+  line-height: 24px;
+}
+h3 {
+  font-size: 16px;
+  line-height: 12px;
+}
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+/* FLEXBOX */
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+/* PADDING */
+.p-25 {
+  padding: 25px;
+}
+/* ICONS */
+.icons-xs {
+  font-size: 11px;
+  vertical-align: middle;
+}
+.icon-s {
+  font-size: 14px;
+}
+.icon-m {
+  font-size: 23px;
+}
+.icon-l {
+  font-size: 33px;
+}
+/* BUTTONS */
+.btn {
+  font-size: 14px;
+  line-height: 36px;
+  color: white;
+  background-color: #000a12;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  padding: 0 12px;
+}
+.btn:hover {
+  color: #f8f8f8;
+  background-color: #4a4a4a;
+}
+.subscribe {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* HEADER */
+header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+header img {
+  width: 175px;
+}
+header div {
+  display: flex;
+  justify-content: space-between;
+}
+header ul {
+  display: flex;
+}
+header ul a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header li {
+  padding-left: 20px;
+}
+header span {
+  font-size: 12px;
+  margin-top: 2px;
+}
+header a {
+  color: rgb(0, 10, 18);
+  text-decoration: inherit;
+}
+header a:hover {
+  color: #4a4a4a;
+}
+/* MENU */
+menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url("/assets/img/singapore.jpg"); */
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  position: relative;
+  margin-bottom: 100px;
+}
+.breadcrumbs {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 11px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.breadcrumbs ul {
+  display: flex;
+}
+.breadcrumbs i {
+  padding: 0 5px;
+}
+.breadcrumbs a {
+  line-height: 40px;
+  color: inherit;
+  text-decoration: inherit;
+}
+.reset-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: rgba(0, 10, 18, 0.6);
+}
+.reset-location:hover {
+  background-color: #000a12;
+}
+.reset-location i {
+  color: white;
+  font-size: 18px;
+}
+.reset-location a {
+  text-decoration: inherit;
+}
+/* NAVIGATION */
+nav {
+  position: absolute;
+  bottom: -75px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: lawngreen; */
+}
+nav ul {
+  display: flex;
+  background-color: white;
+}
+nav li {
+  padding: 24px 46px 10px 46px;
+}
+nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: inherit;
+  text-decoration: inherit;
+}
+nav a:hover span {
+  text-decoration: underline;
+}
+nav span {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+}
+/* MAIN */
+main {
+  display: flex;
+}
+main > div {
+  flex: 1;
+}
+aside {
+  width: 24%;
+}
+aside > div {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 15px;
+}
+/* LEFT COLUMN */
+.col-left img {
+  width: 135px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.col-left h3 {
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.col-left li {
+  display: flex;
+  margin-bottom: 15px;
+  color: #4d4d4d;
+}
+.col-left li:last-child {
+  margin-bottom: 35px;
+}
+.col-left i {
+  display: flex;
+  align-items: center;
+  color: #4a4a4a;
+  font-size: 10px;
+  margin-right: 10px;
+}
+.btn-white {
+  width: 100%;
+  line-height: 36px;
+  border: solid 1px #d6d6d6;
+  padding: 0 12px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.btn-white:hover {
+  border-color: #767676;
+  cursor: pointer;
+}
+/* RIGHT COLUMN */
+.col-right h3 {
+  margin-bottom: 15px;
+}
+.col-right img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+.col-right a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.col-right ul {
+  margin-bottom: 20px;
+}
+.col-right ul:last-child {
+  margin-bottom: 0px;
+}
+.col-right li {
+  line-height: 22px;
+}
+.col-right li:first-child {
+  font-weight: bold;
+}
+.col-right a:hover {
+  text-decoration: underline;
+}
+/* SECTION */
+section > div {
+  background-color: white;
+  margin: 0 25px;
+}
+section h2 {
+  margin-bottom: 15px;
+}
+/* GALLERY */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery > div {
+  width: 50%;
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid white;
+  box-sizing: border-box;
+}
+.gallery > div:nth-child(odd) {
+  border-right: 2px solid white;
+}
+.gallery > div:last-child > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+/* CAROUSSEL */
+
+/* MEDIA QUERIES */
+@media (max-width: 1240px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  aside {
+    display: none;
+  }
+  section > div {
+    margin: 0;
+  }
+  nav {
+    position: absolute;
+    bottom: -100px;
+  }
+  nav > ul {
+    width: 100%;
+  }
+  nav li {
+    flex: 1;
+    padding: 24px 0 10px 0;
+  }
+  section {
+    margin-top: 25px;
+  }
+}
