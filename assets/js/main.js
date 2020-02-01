@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelector(".btn").addEventListener("click", () => {
-    // console.log("coucou");
-    document.querySelector("body").classList.add("subscribe");
-    // bonjour();
+  document.querySelector(".subscribe").addEventListener("click", () => {
+    document.querySelector(".modal").classList.toggle("hidden");
   });
 });
 
-const bonjour = () => {
-  alert("Bonjour");
+const switchModal = () => {
+  document.querySelector(".modal").classList.toggle("hidden");
 };

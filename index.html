@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/assets/css/reset.css" />
     <link rel="stylesheet" href="/assets/css/icons.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <script defer src="/assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
   </head>
   <body>
     <header class="d-flex">
@@ -49,7 +49,7 @@
             >
           </li>
           <li>
-            <button class="btn">s'inscrire</button>
+            <button class="btn subscribe">s'inscrire</button>
           </li>
         </ul>
       </div>
@@ -149,7 +149,7 @@
             tels que vous
           </li>
         </ul>
-        <button class="btn-white">Inscrivez-vous</button>
+        <button class="btn-white subscribe">Inscrivez-vous</button>
       </div>
       </aside>
       <div>
@@ -275,5 +275,19 @@
       </div>
       </aside>
     </main>
+    <div class="modal hidden">
+      <div class="box">
+        <i class="icon-times" onclick="switchModal()"></i>
+        <div class="wrapper">
+          <div><img src="/assets/img/Tripadvisor_lockup_horizontal.svg" alt="Tripadvisor_lockup_horizontal"></div>
+          <ul>
+            <li><img src="/assets/img/G_color_40x40.png" alt="google-logo">Se connecter avec Google</li>
+            <li><img src="/assets/img/icn-FB2.png" alt="facebook-log">Se connecter avec Facebook</li>
+            <li><i class="icon-l icon-email"></i>Se connecter via e-mail</li>
+          </ul>
+          <div class="conditions">En poursuivant, vous acceptez nos Conditions d'utilisation et vous confirmez que vous avez lu notre Politique de confidentialité.</div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
